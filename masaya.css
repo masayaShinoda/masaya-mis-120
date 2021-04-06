@@ -1,0 +1,75 @@
+/* fonts import  */
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F8E7CF;
+    background-size: cover;
+}
+img {
+    max-width: 200px;
+}
+h2 {margin: 1.1rem 0; font-family: monospace;}
+.div1, .div2, .div3 {margin-top: 5vh; width: 80vw;}
+.div1 div, .div2 div, .div3 div {
+    margin: 7.5vh 0;
+}
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 0 17.5vw;
+    display: flex;
+    padding-top: 5vh;
+    padding-bottom: 2.5vh;
+    background: #F8E7CF;    
+    /* border: 1px solid blue; */
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 0 17.5vw;
+    margin-top: 15vh;
+
+}
+h1, h2, a {
+    font-family: "New Tegomin";
+}
+p {
+    font-family: "Lekton";
+    line-height: 1.6;
+    margin-bottom: 1.45rem;
+}
+.navbar a {
+    font-size: 1.25rem;
+    /* margin-right: 1.25rem; */
+    font-weight: 600;
+    color: #212121;
+    text-decoration: none;
+    background: #F2D1A2;
+    padding: .5rem 1.25rem;
+}
+.navbar a:first-of-type {
+    border-radius: .5vmax 0 0 .5vmax;
+}
+.navbar a:last-of-type {
+    border-radius: 0 0.5vmax 0.5vmax 0;
+}
