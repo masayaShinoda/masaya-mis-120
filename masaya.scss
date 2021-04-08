@@ -1,0 +1,120 @@
+/* fonts import  */
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    background: #F8E7CF;
+    background-size: cover;
+    min-height: 100vh; //debug
+}
+img {
+    max-width: 200px;
+}
+.div1, .div2, .div3 {margin-top: 5vh; width: 80vw;}
+.div1 div, .div2 div, .div3 div {
+    margin: 7.5vh 0;
+}
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 0 17.5vw;
+    padding-top: 4.25vh;
+    display: flex;
+    
+    // padding-bottom: 2.5vh;
+    background: #F8E7CF;    
+    // border: 1px solid blue; //debug
+}
+.navbar a {
+    font-size: 1.25rem;
+    /* margin-right: 1.25rem; */
+    font-weight: 600;
+    color: #212121;
+    text-decoration: none;
+    background: #F2D1A2;
+    padding: .5rem 1.25rem;
+}
+.navbar a:first-of-type {
+    border-radius: .5vmax 0 0 .5vmax;
+}
+.navbar a:last-of-type {
+    border-radius: 0 0.5vmax 0.5vmax 0;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 17.5vw;
+    margin-top: 15vh;
+    // border: 1px solid red; //debug
+
+}
+h1, h2, a {
+    font-family: "New Tegomin", monospace;
+    margin-bottom: 1.45rem;
+}
+p {
+    font-family: "Lekton";
+    line-height: 1.6;
+    margin-bottom: 1.45rem;
+}
+
+// index.html
+
+.typewriterArtContainer  {
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    background: url("./resources/wood.png");
+    background-size: cover;
+    // border: 1px solid red; //debug
+    bottom: 0;
+    left: 0;
+    position: fixed; 
+    .typewriterArt  {
+        position: fixed;
+        animation-name: typeWriterAppear;
+        animation-fill-mode: forwards;
+        animation-duration: 1.2s;
+        // bottom: -100px;
+    }    
+    @keyframes typeWriterAppear {
+        0% {bottom: -100px}
+        100% {bottom: 0;}
+    }
+}
+.callToAction {
+    // background: #353535;
+    max-width: fit-content;
+    // color: #F2AC4C;
+    // padding: .25em .5em;
+
+}
+// lessons.html
+.lessonContainer {
+    // border: 1px solid red; //debug
+    padding-bottom: 15vh;
+    div, span, blockquote, q, cite {
+        max-width: 90%;
+        // border: 1px solid green; //debug
+    }
+
+}
