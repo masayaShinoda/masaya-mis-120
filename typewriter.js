@@ -5,7 +5,8 @@ var callToAction = document.getElementById('callToAction');
 var lessonsPage = document.getElementById('textContainer');
 
 var typewriterIndex = new Typewriter(indexPage, {
-    loop: false
+    loop: false,
+    delay: 50   
 });
 var typeWriterCallToAction = new Typewriter(callToAction, {
     loop: false
