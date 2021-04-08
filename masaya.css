@@ -20,7 +20,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F8E7CF;
+  background: url("./resources/vintage-paper.jpg");
   background-size: cover;
   min-height: 100vh;
 }
@@ -55,7 +55,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #F8E7CF;
 }
 
 .navbar a {
@@ -66,14 +65,50 @@ nav {
   text-decoration: none;
   background: #F2D1A2;
   padding: .5rem 1.25rem;
+  -webkit-box-shadow: 0px 2px 6px rgba(45, 45, 45, 0.125);
+          box-shadow: 0px 2px 6px rgba(45, 45, 45, 0.125);
+  border-radius: 12px 0 0 0;
 }
 
-.navbar a:first-of-type {
-  border-radius: .5vmax 0 0 .5vmax;
+.navbar a:nth-of-type(2) {
+  margin-left: -12px;
 }
 
 .navbar a:last-of-type {
-  border-radius: 0 0.5vmax 0.5vmax 0;
+  margin-left: -12px;
+}
+
+@media (max-width: 480px) {
+  nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  nav i {
+    margin-top: .125rem;
+    margin-right: .25rem;
+  }
+  .navbar a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0;
+    width: 33.33%;
+    margin: 0;
+    padding: .75rem 1.25rem;
+  }
+  .navbar a:nth-of-type(2) {
+    margin: 0;
+  }
+  .navbar a:last-of-type {
+    margin: 0;
+  }
 }
 
 main {
@@ -94,10 +129,15 @@ h1, h2, a {
   margin-bottom: 1.45rem;
 }
 
-p {
-  font-family: "Lekton";
+a, p {
+  font-size: 1.1rem;
+  font-weight: 700;
   line-height: 1.6;
   margin-bottom: 1.45rem;
+}
+
+p {
+  font-family: "Lekton",  monospace;
 }
 
 .typewriterArtContainer {
