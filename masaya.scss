@@ -103,6 +103,12 @@ main {
     padding: 5vh 17.5vw;
     margin-top: 15vh;
     // border: 1px solid red; //debug
+}
+@media (max-width: 480px) {
+    main {
+        padding: 5vh 2.5vw;
+
+    }
 
 }
 h1, h2, a {
@@ -160,4 +166,13 @@ p {
         // border: 1px solid green; //debug
     }
 
+}
+@media (max-width: 480px) {
+    .tabs {
+        padding-bottom: 15vh;
+    }
+    .lessonContainer {
+        // padding-bottom: 25vh;
+        // border: 5px solid green; //debug
+    }
 }

@@ -124,6 +124,12 @@ main {
   margin-top: 15vh;
 }
 
+@media (max-width: 480px) {
+  main {
+    padding: 5vh 2.5vw;
+  }
+}
+
 h1, h2, a {
   font-family: "New Tegomin", monospace;
   margin-bottom: 1.45rem;
@@ -196,5 +202,11 @@ p {
 
 .lessonContainer div, .lessonContainer span, .lessonContainer blockquote, .lessonContainer q, .lessonContainer cite {
   max-width: 90%;
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    padding-bottom: 15vh;
+  }
 }
 /*# sourceMappingURL=masaya.css.map */

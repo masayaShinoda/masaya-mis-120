@@ -41,7 +41,7 @@
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #fff;
+  background: #d5d5d5;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
