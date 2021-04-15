@@ -9,10 +9,13 @@ var typewriterIndex = new Typewriter(indexPage, {
     delay: 50   
 });
 var typeWriterCallToAction = new Typewriter(callToAction, {
-    loop: false
+    loop: false,
+    delay: 60
 });
 var typewriterLessons = new Typewriter(lessonsPage, {
-    loop: false
+    loop: false,
+    delay: 75
+
 });
 typewriterIndex.typeString("Hey there!")
     .pauseFor(1000)
@@ -20,7 +23,7 @@ typewriterIndex.typeString("Hey there!")
     .typeString("My name's Masaya and I'm from section 3 in MIS.")
     .start();
 
-typeWriterCallToAction.pauseFor(4500).typeString("See MIS lessons ->").start();
+typeWriterCallToAction.pauseFor(5000).typeString("See MIS lessons ->").start();
 
 typewriterLessons.typeString("Here's what was covered in MIS 120:")
     // .pauseFor(2500)

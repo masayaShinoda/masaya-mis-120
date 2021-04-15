@@ -22,11 +22,12 @@ body {
           align-items: center;
   background: url("./resources/vintage-paper.jpg");
   background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
 img {
-  max-width: 200px;
+  max-width: 100%;
 }
 
 .div1, .div2, .div3 {
@@ -148,7 +149,7 @@ p {
 
 .typewriterArtContainer {
   width: 100%;
-  height: 7.5vh;
+  height: 5vmin;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,12 +158,14 @@ p {
           justify-content: center;
   background: url("./resources/wood.png");
   background-size: cover;
+  background-position: top;
   bottom: 0;
   left: 0;
   position: fixed;
 }
 
 .typewriterArtContainer .typewriterArt {
+  max-width: 150px;
   position: fixed;
   -webkit-animation-name: typeWriterAppear;
           animation-name: typeWriterAppear;
